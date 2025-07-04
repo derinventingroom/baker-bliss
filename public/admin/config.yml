@@ -3,7 +3,7 @@ backend:
   repo: derinventingroom/baker-bliss
   branch: main
 
-media_folder: "public/assets/uploads"
+media_folder: "assets/uploads"       # relative to repo root, inside public folder
 public_folder: "/assets/uploads"
 
 collections:
