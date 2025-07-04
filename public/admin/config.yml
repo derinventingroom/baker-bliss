@@ -1,10 +1,9 @@
 backend:
-  name: netlify
-  repo: derinventingroom/baker-bliss
+  name: git-gateway
   branch: main
 
-media_folder: "assets/uploads"       # relative to repo root, inside public folder
-public_folder: "/assets/uploads"
+media_folder: "assets/uploads"       # Relative to repo root (in public)
+public_folder: "/assets/uploads"     # Public URL
 
 collections:
   - name: "blog"
