@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Content Manager</title>
-    <script src="https://unpkg.com/netlify-cms@2.10.192/dist/netlify-cms.js" defer></script>
+    <script src="https://unpkg.com/@decapcms/netlify-cms@3.0.0/dist/netlify-cms.js" defer></script>
   </head>
   <body>
     <script>
@@ -11,7 +11,7 @@
         if (window.CMS) {
           window.CMS.init({ config: '/admin/config.yml' });
         } else {
-          console.error('Netlify CMS script did not load');
+          console.error('CMS did not load');
         }
       });
     </script>
