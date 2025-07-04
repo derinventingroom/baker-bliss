@@ -1,0 +1,31 @@
+---
+// src/layouts/Layout.astro
+import "../styles/global.css";
+const { title = "Bakery Bliss" } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="bg-pink-50 text-gray-800 font-sans">
+
+	    <!-- Navbar -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold text-pink-700">Bakery Bliss</a>
+        <nav class="space-x-6">
+          <a href="/" class="text-gray-700 hover:text-pink-600">Home</a>
+          <a href="#menu" class="text-gray-700 hover:text-pink-600">Menu</a>
+          <a href="#about" class="text-gray-700 hover:text-pink-600">About</a>
+          <a href="/blog" class="text-gray-700 hover:text-pink-600">Blog</a>
+          <a href="#contact" class="text-gray-700 hover:text-pink-600">Visit</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

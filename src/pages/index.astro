@@ -1,0 +1,151 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Bakery Bliss - Fresh Bakes Daily">
+
+<!-- Hero Section -->
+<section id="home" class="relative shadow-md py-16">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+        <div class="absolute w-[60rem] h-[60rem] top-[-20rem] left-[-20rem] bg-pink-100 rounded-full blur-3xl opacity-70"></div>
+        <div class="absolute w-[60rem] h-[60rem] top-[10rem] right-[-30rem] bg-purple-100 rounded-full blur-3xl opacity-70"></div>
+        <div class="absolute w-[60rem] h-[60rem] bottom-[-10rem] left-1/2 -translate-x-1/2 bg-orange-100 rounded-full blur-3xl opacity-60"></div>
+    </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-5xl mx-auto px-4 py-8">
+    
+    <!-- Left side: Logo + CTA -->
+    <div class="text-center md:text-left space-y-6">
+      <!-- Logo (could be an image or stylized name) -->
+      <h1 class="text-5xl font-extrabold text-pink-700">Bakery Bliss</h1>
+      <p class="text-xl text-gray-700 max-w-md">
+        Handcrafted pastries, fresh from the oven every morning.
+      </p>
+      <a href="#menu" class="inline-block bg-pink-600 text-white px-6 py-3 rounded-full text-lg hover:bg-pink-700 transition">
+        See Our Menu
+      </a>
+    </div>
+
+    <!-- Right side: Hero Image -->
+    <div class="flex justify-center md:justify-end">
+      <img
+        src="/images/hero-cupcake.png"
+        alt="Fresh pastries on a wooden table"
+        class="max-w-full h-auto"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section class="bg-white py-12">
+    <h2 class="text-3xl font-semibold text-center mb-6">About Us</h2>
+    <p class="text-center max-w-3xl mx-auto text-lg">
+      At Bakery Bliss, we believe in warm ovens and warm hearts. Our family-owned shop has been serving fresh bread, cakes, and cookies with love since 1998.
+    </p>
+  </section>
+
+  <!-- Team Section -->
+<section class="bg-white py-16">
+  <h2 class="text-3xl font-semibold text-center mb-10 text-pink-700">Meet Our Bakers</h2>
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+    
+    <!-- Worker 1 -->
+    <div class="bg-pink-50 rounded-xl shadow-md p-6 text-center">
+      <img src="/images/sofia.jpg" alt="Baker 1" class="mx-auto rounded-full mb-4 border-4 border-pink-200" />
+      <h3 class="text-xl font-bold text-pink-700">Sofia</h3>
+      <p class="text-gray-600 text-sm">Croissant Queen & morning dough whisperer.</p>
+    </div>
+
+    <!-- Worker 2 -->
+    <div class="bg-pink-50 rounded-xl shadow-md p-6 text-center">
+      <img src="/images/mira.jpg" alt="Baker 3" class="mx-auto rounded-full mb-4 border-4 border-blue-200" />
+      <h3 class="text-xl font-bold text-blue-700">Mira</h3>
+      <p class="text-gray-600 text-sm">Cakes, cookies, and all things sweet.</p>
+    </div>
+
+    <!-- Worker 3 -->
+    <div class="bg-pink-50 rounded-xl shadow-md p-6 text-center">
+      <img src="/images/luca.jpg" alt="Baker 2" class="mx-auto rounded-full mb-4 border-4 border-purple-200" />
+      <h3 class="text-xl font-bold text-purple-700">Luca</h3>
+      <p class="text-gray-600 text-sm">Master of tarts and tart commentary.</p>
+    </div>
+
+
+
+    <!-- Worker 4 -->
+    <div class="bg-pink-50 rounded-xl shadow-md p-6 text-center">
+      <img src="/images/theo.jpg" alt="Baker 4" class="mx-auto rounded-full mb-4 border-4 border-orange-200" />
+      <h3 class="text-xl font-bold text-orange-600">Theo</h3>
+      <p class="text-gray-600 text-sm">Sourdough scientist and baguette boss.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Featured Products -->
+<section id="menu" class="relative py-16">
+    <!-- Gradient Blobs Background -->
+  <div class="absolute inset-0 -z-10 overflow-hidden">
+        <div class="absolute w-[60rem] h-[60rem] top-[-20rem] left-[-20rem] bg-purple-100 rounded-full blur-3xl opacity-70"></div>
+        <div class="absolute w-[60rem] h-[60rem] top-[10rem] right-[-30rem] bg-pink-100 rounded-full blur-3xl opacity-70"></div>
+        <div class="absolute w-[60rem] h-[60rem] bottom-[-10rem] left-1/2 -translate-x-1/2 bg-orange-100 rounded-full blur-3xl opacity-60"></div>
+  </div>
+  <h2 class="text-3xl font-semibold text-center mb-12 text-pink-700">Fresh from the Oven</h2>
+  <div class="space-y-16 max-w-6xl mx-auto px-4">
+
+    <!-- Product 1 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <!-- Text Left -->
+      <div>
+        <h3 class="text-2xl font-bold text-pink-700 mb-2">Chocolate Croissant</h3>
+        <p class="text-gray-700 text-lg">Flaky, buttery layers filled with rich chocolate, baked fresh every morning.</p>
+      </div>
+      <!-- Image Right -->
+      <div class="flex justify-center">
+        <img src="/images/Chocolate-Croissant.png" alt="Chocolate Croissant" class="rounded-xl max-w-l">
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <!-- Text Left -->
+      <div class="flex justify-center">
+        <img src="/images/Strawberry-Tart.png" alt="Strawberry Tart" class="rounded-xl max-w-l">
+      </div>
+
+      <!-- Image Right -->
+      <div>
+        <h3 class="text-2xl font-bold text-purple-700 mb-2">Strawberry Tart</h3>
+        <p class="text-gray-700 text-lg">Fresh strawberries layered on creamy custard with a buttery shortcrust base.</p>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <!-- Text Left -->
+      <div>
+        <h3 class="text-2xl font-bold text-orange-600 mb-2">Cinnamon Rolls</h3>
+        <p class="text-gray-700 text-lg">Soft, gooey cinnamon rolls topped with sweet vanilla glaze.</p>
+      </div>
+      <!-- Image Right -->
+      <div class="flex justify-center">
+        <img src="/images/Cinnamon-Rolls.png" alt="Cinnamon Rolls" class="rounded-xl max-w-l">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Contact Info -->
+  <section class="py-12 text-center">
+    <h2 class="text-2xl font-semibold mb-4">Visit Us</h2>
+    <p class="text-lg">123 Sugar Street, Sweetville</p>
+    <p class="text-lg">Open Daily: 7am – 3pm</p>
+  </section>
+
+</Layout>
