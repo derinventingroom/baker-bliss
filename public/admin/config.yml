@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: yourusername/your-repo-name
+  repo: derinventingroom/baker-bliss
   branch: main  # or your default branch
 
 media_folder: "public/assets/uploads"
@@ -9,7 +9,7 @@ public_folder: "/assets/uploads"
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "src/content/blog"
+    folder: "src/pages/blog"
     create: true
     slug: "{{slug}}"
     fields:
