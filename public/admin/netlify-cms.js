@@ -1,1 +1,1 @@
-Package version not found: netlify-cms@^2.15.57
+Package version not found: netlify-cms@2.15.54
