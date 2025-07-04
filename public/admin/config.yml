@@ -1,7 +1,7 @@
 backend:
-  name: github
+  name: netlify
   repo: derinventingroom/baker-bliss
-  branch: main  # or your default branch
+  branch: main
 
 media_folder: "public/assets/uploads"
 public_folder: "/assets/uploads"
