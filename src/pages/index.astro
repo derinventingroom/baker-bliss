@@ -149,17 +149,21 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
 </Layout>
-<!-- Netlify Identity Widget (for email confirmation / login) -->
+<!-- Netlify Identity Widget -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-    window.netlifyIdentity.init();
-  }
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user) => {
+        // For confirmed users, redirect to admin
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+      window.netlifyIdentity.init();
+    }
+  });
 </script>
