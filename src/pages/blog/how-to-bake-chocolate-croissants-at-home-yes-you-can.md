@@ -4,6 +4,8 @@ date: 2025-07-05T04:10:06.470Z
 ---
 There’s something magical about biting into a warm, flaky chocolate croissant. That golden, buttery exterior giving way to layers of delicate pastry and rich, melty chocolate—*chef’s kiss*. But here’s the best part: you can absolutely make them at home. Even if you’ve never made laminated dough before, I’ve got your back.
 
+![Golden brown croissant](/images/uploads/assets/uploads/chocolate-croissant.jpg)
+
 In this post, I’ll walk you through the process of making classic French chocolate croissants from scratch. Ready to channel your inner Parisian baker?
 
 - - -
